@@ -10,14 +10,21 @@
 					<table id="example" class="table table-striped table-bordered">
 						<thead>
 							<tr>
-								<th>Years</th>
-								<th>Project Item</th>
-								<th>Client</th>
-								<th>Location</th>
-								<th>Description</th>
+								<th>Job Title</th>
+								<th>Action</th>
 							</tr>
 						</thead>
-						<tbody>
+							<tbody>
+								<tr>
+									<td>Welding Inspector</td>
+									<td><a href="#" style="color: blue;">Apply</a></td>
+								</tr>
+									<td>Network Engineer</td>
+									<td><a href="#" style="color: blue;">Apply</a></td>
+								<tr>
+								</tr>
+							</tbody>
+						<!--<tbody>
 							<?php foreach ($data_client as $key => $row) { ?>
 							<tr>
 								<td><?php echo $row->years; ?></td>
@@ -28,7 +35,7 @@
 
 							</tr>
 							<?php } ?>
-						</tbody>
+						</tbody>-->
 					</table>
 				</div>
 				<script type="text/javascript">
