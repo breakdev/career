@@ -10,11 +10,11 @@
 					<table id="example" class="table table-striped table-bordered">
 						<thead>
 							<tr>
-								<th>Job Title</th>
-								<th>Action</th>
+								<th>JOB TITLE</th>
+								<th>ACCTION</th>
 							</tr>
 						</thead>
-							<tbody>
+							<!--<tbody>
 								<tr>
 									<td>Welding Inspector</td>
 									<td><a href="#" style="color: blue;">Apply</a></td>
@@ -23,19 +23,15 @@
 									<td><a href="#" style="color: blue;">Apply</a></td>
 								<tr>
 								</tr>
-							</tbody>
-						<!--<tbody>
-							<?php foreach ($data_client as $key => $row) { ?>
+							</tbody>-->
+						<tbody>
+							<?php foreach ($open_jobs as $key => $row) { ?>
 							<tr>
-								<td><?php echo $row->years; ?></td>
-								<td><?php echo $row->project_item; ?></td>
-								<td><?php echo $row->client; ?></td>
-								<td><?php echo $row->location; ?></td>
-								<td><?php echo $row->description; ?></td>
-
+								<td><?php echo $row->position_name; ?></td>
+								<td><a href="#" style="color: blue;">Apply</a></td>
 							</tr>
 							<?php } ?>
-						</tbody>-->
+						</tbody>
 					</table>
 				</div>
 				<script type="text/javascript">

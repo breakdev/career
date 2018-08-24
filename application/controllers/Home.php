@@ -8,11 +8,13 @@ class Home extends CI_Controller
     function __construct()
     {
         parent::__construct();
+        $this->load->model('career_model');
     }
 
     public function index()
     {
-		$this->load->view('home');
+		$data['open_jobs']=$this->career_model->ambil_data();
+		$this->load->view('home',$data);
         
     } 
 }
