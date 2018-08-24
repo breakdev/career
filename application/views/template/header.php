@@ -72,7 +72,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<div class="header-bottom">
 				<div class="w3ls-logo">
-					<h1><img src="<?php echo base_url('assets1/images/qes.png')?>"></h1>
+					<h1><a href="<?php site_url('home')?>"><img src="<?php echo base_url('assets1/images/qes.png')?>"></a></h1>
 				</div>
 				<div class="header-top-right">
 					<form action="#" method="post">
