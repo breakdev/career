@@ -28,7 +28,7 @@
 							<?php foreach ($open_jobs as $key => $row) { ?>
 							<tr>
 								<td><?php echo $row->position_name; ?></td>
-								<td><a href="apply" style="color: blue;">Apply</a></td>
+								<td><a href="<?php echo site_url('apply') ?>" style="color: blue;">Apply</a></td>
 							</tr>
 							<?php } ?>
 						</tbody>
