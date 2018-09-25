@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="contact-form agileits-w3layouts">
 			<h4>Apply Form</h4>
-			<form action="<?php echo site_url('Kontak/tambah_aksi');?>" method="post">
+			<form action="<?php echo site_url('Apply/aksi_upload');?>" enctype="multipart/form-data" method="post">
 				<input type="hidden" name="id_contact" value="">
 				<input type="hidden" name="date" value="<?php echo tanggalx();?>">
 				<input type="text" name="nama" placeholder="Name" required>
@@ -15,7 +15,7 @@
 				<br>
 				<br>
 				<textarea placeholder="Reason why choose this job" name="feed" required></textarea>
-				<button class="btn1 btn-1 btn-1b w3-agile">Submit</button>
+				<input class="btn1 btn-1 btn-1b w3-agile" type="submit" value="upload" />
 			</form>
 		</div>	
 	</div>

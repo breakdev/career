@@ -24,7 +24,7 @@ class Apply extends CI_Controller
  
 		$this->load->library('upload', $config);
  
-		if (!$this->upload->do_upload('berkas')){
+		if (!$this->upload->do_upload('cv')){
 			$error = array('error' => $this->upload->display_errors());
 			$this->load->view('apply', $error);
 		}else{
