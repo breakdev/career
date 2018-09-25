@@ -30,7 +30,7 @@
 								<td><?php echo $item;?></td>
 								<td><?php echo $value;?></td>
 							</tr>
-							<?php } ?>
+							<?php endforeach; ?>
 						</tbody>
 					</table>
 				</div>
