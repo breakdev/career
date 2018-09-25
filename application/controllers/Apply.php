@@ -18,9 +18,9 @@ class Apply extends CI_Controller
     public function aksi_upload(){
 		$config['upload_path']          = './berkas/';
 		$config['allowed_types']        = 'gif|jpg|png';
-		$config['max_size']             = 1000;
-		$config['max_width']            = 10240;
-		$config['max_height']           = 7680;
+		$config['max_size']             = 100;
+		$config['max_width']            = 1024;
+		$config['max_height']           = 768;
  
 		$this->load->library('upload', $config);
  

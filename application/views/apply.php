@@ -4,6 +4,7 @@
 	<div class="container">
 		<div class="contact-form agileits-w3layouts">
 			<h4>Apply Form</h4>
+			<?php echo $error;?>
 			<form action="<?php echo site_url('Apply/aksi_upload');?>" enctype="multipart/form-data" method="post">
 				<input type="hidden" name="id_contact" value="">
 				<input type="hidden" name="date" value="<?php echo tanggalx();?>">
