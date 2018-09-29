@@ -29,7 +29,7 @@
 							<tr>
 								<td><?php echo $row->position_name; ?></td>
 								<td><?php echo anchor(site_url('apply/apply_form/'.$row->id_position),
-										'<i class="material-icons">Apply</i>',
+										'<i class="material-icons">Apply Now</i>',
 										'<button type="button" rel="tooltip" class="btn btn-primary btn-simple btn-xs"'); ?>
 							</tr>
 							<?php } ?>

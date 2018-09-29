@@ -3,6 +3,15 @@
 <div class="contact">
 	<div class="container">
 		<div class="contact-form agileits-w3layouts">
+			<?php if($id_position != null){ ?>
+			<h4>Job Desc</h4>
+			<p><?php echo $description ?></p>
+			<br>
+			<br>
+			<h4>Qualifications</h4>
+			<p><?php echo $requirement ?></p>
+			<br>
+			<br>
 			<h4>Apply Form</h4>
 			<form action="<?php echo site_url('Apply/aksi_upload');?>" enctype="multipart/form-data" method="post">
 				<input type="hidden" name="id_contact" value="">
@@ -13,12 +22,15 @@
 
 				Upload CV : <br>
 				<input type="file" name="cv">
-				<?php echo $error;?>
+				<!-- <?php echo $error;?> -->
 				<br>
 				<br>
 				<textarea placeholder="Reason why choose this job" name="feed" required></textarea>
 				<input class="btn1 btn-1 btn-1b w3-agile" type="submit" value="upload" />
 			</form>
+			<?php } else {?>
+				Null
+				<?php }?>
 		</div>	
 	</div>
 </div>

@@ -8,6 +8,7 @@ class Apply extends CI_Controller
     function __construct()
     {
         parent::__construct();
+        $this->load->model('Career_model');
     }
 
     public function index()
@@ -16,7 +17,16 @@ class Apply extends CI_Controller
     }
 
     public function apply_form($id){
-    	
+    	$rcd=$this->Career_model->ambil_data_id($id);
+    	$data=array(
+			'id_position'	=> set_value('id_position',$rcd->id_position),
+			'position_name'	=> set_value('position_name',$rcd->position_name),
+			'description'	=> set_value('description',$rcd->description),
+			'requirement'	=> set_value('requirement',$rcd->requirement),
+			'action' 		=> site_url('Apply/aksi_upload'),
+			'button'		=>'Apply'
+			);
+		$this->load->view('apply',$data);
     } 
 
     public function aksi_upload(){
