@@ -28,7 +28,9 @@
 							<?php foreach ($open_jobs as $key => $row) { ?>
 							<tr>
 								<td><?php echo $row->position_name; ?></td>
-								<td><a href="<?php echo site_url('apply') ?>" style="color: blue;">Apply</a></td>
+								<td><?php echo anchor(site_url('apply/apply_form/'.$row->id_position),
+										'<i class="material-icons">Apply</i>',
+										'<button type="button" rel="tooltip" class="btn btn-primary btn-simple btn-xs"'); ?>
 							</tr>
 							<?php } ?>
 						</tbody>

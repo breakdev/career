@@ -13,6 +13,10 @@ class Apply extends CI_Controller
     public function index()
     {
 		$this->load->view('apply', array('error' => ' ' ));
+    }
+
+    public function apply_form($id){
+    	
     } 
 
     public function aksi_upload(){
