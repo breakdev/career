@@ -22,7 +22,7 @@
 
 				Upload CV : <br>
 				<input type="file" name="cv">
-				<!-- <?php echo $error;?> -->
+				<?php echo $error;?>
 				<br>
 				<br>
 				<textarea placeholder="Reason why choose this job" name="feed" required></textarea>

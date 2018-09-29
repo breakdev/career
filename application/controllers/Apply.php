@@ -24,7 +24,8 @@ class Apply extends CI_Controller
 			'description'	=> set_value('description',$rcd->description),
 			'requirement'	=> set_value('requirement',$rcd->requirement),
 			'action' 		=> site_url('Apply/aksi_upload'),
-			'button'		=>'Apply'
+			'button'		=>'Apply',
+			'error' 		=>' '
 			);
 		$this->load->view('apply',$data);
     } 
