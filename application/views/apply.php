@@ -13,7 +13,7 @@
 			<br>
 			<br>
 			<h4>Apply Form</h4>
-			<form action="<?php echo site_url('Apply/aksi_upload');?>" enctype="multipart/form-data" method="post">
+			<form action="<?php echo $action; ?>" enctype="multipart/form-data" method="post">
 				<input type="hidden" name="id_contact" value="">
 				<input type="hidden" name="date" value="<?php echo tanggalx();?>">
 				<input type="text" name="nama" placeholder="Name" required>
