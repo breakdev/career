@@ -11,11 +11,6 @@ class Apply extends CI_Controller
         $this->load->model('Career_model');
     }
 
-    public function index()
-    {
-		$this->load->view('apply', array('error' => ' ' ));
-    }
-
     public function apply_form($id){
     	$rcd=$this->Career_model->ambil_data_id($id);
     	$data=array(
